@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <style>
+    /* Internal CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-image:url(flight4.jpeg);
+      
+     background-size:cover;
+    background-repeat:none;
+    }
+
+    .dashboard {
+      width: 400px;
+      margin: 50px auto;
+      background-color: #f5f5f5;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 0.5s ease-in-out;
+    }
+
+    .dashboard h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .dashboard ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .dashboard li {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .dashboard a {
+      display: block;
+      padding: 12px 20px;
+      background-color: #FA7070;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .dashboard a:hover {
+      background-color: #FA7070;
+      transform: scale(1.05);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="dashboard">
+  <h2> DONOR DASHBOARD</h2>
+  <hr>
+  <ul>
+    <li><a href="Adddonor.html">ADD DONOR</a></li>
+    <li><a href="deletedonor.html">DELETE DONOR</a></li>
+    <li><a href="updatedonor.html">UPDATE DONOR</a></li>
+  </ul>
+</div>
+
+</body>
+</html>
